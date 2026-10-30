@@ -1,0 +1,132 @@
+{
+ "id": "revision00001",
+ "title": "Presentacion de prueba para la revision",
+ "subtitle": "Archivo para probar importar, buscar y compartir",
+ "language": "es",
+ "audience": "equipo de revision de la tienda",
+ "theme": {
+  "name": "editorial-dark",
+  "background": "#0b0d10",
+  "surface": "#14181d",
+  "foreground": "#f5f7fa",
+  "muted": "#9aa4b2",
+  "accent": "#7c5cff",
+  "accent_alt": "#22d3a6",
+  "font_display": "Inter",
+  "font_body": "Inter",
+  "radius_px": 14
+ },
+ "sources": [],
+ "created_at": "2026-10-30T00:00:00Z",
+ "slides": [
+  {
+   "id": "rev000000001",
+   "layout": "title",
+   "section": "hook",
+   "title": "Presentacion de prueba para la revision",
+   "bullets": [],
+   "stats": [],
+   "timeline": [],
+   "comparison": [],
+   "chart": null,
+   "align": "center",
+   "speaker_notes": "Este archivo existe para que puedas probar importar: una vez importado, la biblioteca tiene dos presentaciones y aparece el campo de busqueda.",
+   "citations": [],
+   "subtitle": "Importala desde la biblioteca con «Importar archivo»",
+   "body": "",
+   "quote": "",
+   "quote_author": "",
+   "image_prompt": "",
+   "image_url": "",
+   "rationale": ""
+  },
+  {
+   "id": "rev000000002",
+   "layout": "split_image_text",
+   "section": "core",
+   "title": "Que probar con este archivo",
+   "bullets": [
+    "Buscar: escribe «revision» en la biblioteca",
+    "Ensayar: pulsa «Ensayar» y mira el tiempo de cada diapositiva",
+    "Compartir: desde el lector, «Compartir» envia este mismo archivo"
+   ],
+   "stats": [],
+   "timeline": [],
+   "comparison": [],
+   "chart": null,
+   "align": "left",
+   "speaker_notes": "Con dos presentaciones en la biblioteca ya se puede buscar. Escribe «revision» en el campo de busqueda para ver solo esta.",
+   "citations": [],
+   "subtitle": "",
+   "body": "",
+   "quote": "",
+   "quote_author": "",
+   "image_prompt": "",
+   "image_url": "",
+   "rationale": ""
+  },
+  {
+   "id": "rev000000003",
+   "layout": "timeline",
+   "section": "core",
+   "title": "Recorrido sugerido",
+   "bullets": [],
+   "stats": [],
+   "timeline": [
+    {
+     "when": "1",
+     "what": "importar este archivo",
+     "citation": null
+    },
+    {
+     "when": "2",
+     "what": "buscarlo en la biblioteca",
+     "citation": null
+    },
+    {
+     "when": "3",
+     "what": "abrirlo, ensayar y girar el telefono",
+     "citation": null
+    },
+    {
+     "when": "4",
+     "what": "compartirlo y borrarlo",
+     "citation": null
+    }
+   ],
+   "comparison": [],
+   "chart": null,
+   "align": "left",
+   "speaker_notes": "El orden no importa; cada paso funciona sin conexion y sin servidor.",
+   "citations": [],
+   "subtitle": "",
+   "body": "",
+   "quote": "",
+   "quote_author": "",
+   "image_prompt": "",
+   "image_url": "",
+   "rationale": ""
+  },
+  {
+   "id": "rev000000004",
+   "layout": "closing",
+   "section": "takeaway",
+   "title": "Fin de la prueba",
+   "bullets": [],
+   "stats": [],
+   "timeline": [],
+   "comparison": [],
+   "chart": null,
+   "align": "center",
+   "speaker_notes": "Para borrarla, mantenla pulsada en la biblioteca. El ejemplo incluido no se puede borrar.",
+   "citations": [],
+   "subtitle": "Puedes borrar esta presentacion desde la biblioteca",
+   "body": "",
+   "quote": "",
+   "quote_author": "",
+   "image_prompt": "",
+   "image_url": "",
+   "rationale": ""
+  }
+ ]
+}

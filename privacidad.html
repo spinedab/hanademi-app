@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Política de privacidad de Hanademi</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="estilo.css" />
+  <style>header#title-block-header{display:none}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Política de privacidad de Hanademi</h1>
+</header>
+<h1 id="política-de-privacidad-de-hanademi">Política de privacidad de
+Hanademi</h1>
+<p><em>Última actualización: 30 de octubre de 2026.</em></p>
+<h2 id="resumen">Resumen</h2>
+<p>Hanademi no tiene cuentas, no muestra publicidad y no incluye
+analítica propia ni identificadores de publicidad. Lo que usas en la app
+se guarda en tu dispositivo y no llega a ningún servidor nuestro, porque
+no tenemos ninguno.</p>
+<p>La única excepción es el lector de códigos QR <strong>en
+Android</strong>: usa un componente de Google (ML Kit) que envía a
+Google datos técnicos de diagnóstico cuando lo usas. Se explica más
+abajo, en «Lector de códigos QR en Android».</p>
+<h2 id="qué-guarda-la-app-y-dónde">Qué guarda la app, y dónde</h2>
+<p>Todo lo siguiente se guarda <strong>solo en tu propio
+dispositivo</strong>, en el almacenamiento privado de la app, y se borra
+si la desinstalas:</p>
+<ul>
+<li>Las presentaciones que abres desde un motor Hanademi y las que
+importas desde un archivo, para que puedas leerlas sin conexión.</li>
+<li>El historial de tus ensayos cronometrados: hasta 20 por
+presentación, con la fecha y los segundos reales y previstos de cada
+diapositiva.</li>
+<li>El tamaño de letra que eliges para las notas del orador.</li>
+</ul>
+<p>Nada de esto se copia a ningún servidor nuestro. En Android, la app
+además queda fuera de la copia de seguridad en la nube del sistema.</p>
+<h2 id="cámara">Cámara</h2>
+<p>La app pide acceso a la cámara <strong>solo cuando pulsas «Escanear
+codigo del motor»</strong> en la pantalla «Conectar con tu motor», y
+solo para leer el código QR que muestra tu motor Hanademi. La imagen se
+procesa en el teléfono, no se guarda y no se envía. De lo que lee, la
+app solo usa el texto del código, que es la dirección del motor; un
+código que no tenga esa forma se descarta.</p>
+<p>Si no das el permiso, puedes escribir la dirección a mano y el resto
+de la app funciona igual.</p>
+<h2 id="archivos">Archivos</h2>
+<ul>
+<li><strong>Importar</strong>: al pulsar «Importar archivo», el selector
+de documentos del sistema te deja elegir un archivo
+<code>.hanademi.json</code>. La app lee solo ese archivo y guarda la
+presentación en tu biblioteca local. No pide permiso de acceso al
+almacenamiento.</li>
+<li><strong>Compartir</strong>: al pulsar «Compartir» en una
+presentación, la app crea una copia temporal del archivo y la entrega a
+la hoja de compartir del sistema. Tú eliges a qué app o persona se
+envía; no pasa por ningún servidor nuestro.</li>
+</ul>
+<p>Las imágenes de una presentación tienen que venir dentro del propio
+archivo. La app no descarga imágenes de Internet, así que abrir un
+archivo importado no hace ninguna conexión.</p>
+<h2 id="conexiones-de-red">Conexiones de red</h2>
+<p>La app solo hace peticiones de red a la dirección de un motor
+Hanademi, que es un servidor que tú ejecutas, normalmente en tu propia
+red local. Esa dirección la indicas tú, de una de estas formas:</p>
+<ul>
+<li>escribiéndola en la pantalla «Conectar con tu motor»;</li>
+<li>escaneando el código QR que muestra tu motor;</li>
+<li>abriendo un enlace <code>hanademi://conectar</code>, por ejemplo al
+leer ese mismo código con la cámara del sistema.</li>
+</ul>
+<p>Escanear el código o abrir el enlace <strong>solo rellena la
+dirección</strong>: la app no se conecta hasta que pulsas «Buscar
+presentaciones». Un código QR solo se acepta si es un enlace
+<code>hanademi://conectar</code> o la dirección de un equipo de tu red
+local.</p>
+<p>Mientras lees una presentación traída de tu motor, la app puede
+seguir hablando con esa misma dirección para que el teléfono haga de
+mando. Con ninguna otra.</p>
+<p>La presentación de ejemplo incluida, las que ya tengas guardadas y
+las que importes desde un archivo funcionan sin ninguna conexión.</p>
+<h2 id="lector-de-códigos-qr-en-android">Lector de códigos QR en
+Android</h2>
+<p>En Android, el lector de códigos QR usa <strong>Google ML
+Kit</strong>, un componente de Google incluido en la app. Cuando usas
+«Escanear codigo del motor», ML Kit envía a Google, cifrados (HTTPS),
+datos técnicos sobre el dispositivo y la app, un identificador por
+instalación y métricas de rendimiento y errores de la propia función de
+escaneo. Google los usa para diagnóstico y analítica del componente.
+Nosotros no recibimos esos datos.</p>
+<p>Las imágenes de la cámara no forman parte de ese envío. Si no usas el
+escáner, ML Kit no envía nada.</p>
+<p>Google lo explica en <a
+href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>.</p>
+<p>En iPhone y iPad el lector de códigos usa el sistema de Apple y no
+incluye ML Kit: allí no se envía nada.</p>
+<h2 id="terceros">Terceros</h2>
+<p>Aparte de Google ML Kit en Android, descrito arriba, la app no
+incorpora SDK de publicidad, de analítica ni de seguimiento.</p>
+<h2 id="menores">Menores</h2>
+<p>La app no está dirigida a menores de 13 años.</p>
+<h2 id="contacto">Contacto</h2>
+<p>Para cualquier duda sobre esta política o sobre tus datos, escribe a
+<a href="mailto:dnework.col@gmail.com">dnework.col@gmail.com</a>.</p>
+</body>
+</html>
